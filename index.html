@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pleated A-Line Skirt | FashionStore.id</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+        }
+        
+        .product-shadow {
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        
+        .modal-content {
+            transition: transform 0.3s ease;
+        }
+        
+        .modal:not(.show) {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .modal:not(.show) .modal-content {
+            transform: scale(0.9);
+        }
+        
+        .modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal.show .modal-content {
+            transform: scale(1);
+        }
+        
+        .notification {
+            animation: slideIn 0.5s forwards, slideOut 0.5s forwards 2.5s;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        
+        @keyframes slideOut {
+            from { transform: translateY(0); }
+            to { transform: translateY(100%); }
+        }
+        
+        .price-badge {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .color-option {
+            transition: all 0.3s ease;
+        }
+        
+        .color-option:hover {
+            transform: scale(1.05);
+        }
+        
+        .color-option.active {
+            border: 2px solid #000;
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .scroll-hint {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://scontent.fsub8-2.fna.fbcdn.net/v/t39.30808-6/340280384_202238192515306_1857026655624969742_n.jpg?stp=dst-jpg_tt6&cstp=mx626x626&ctp=s626x626&_nc_cat=101&cb=99be929b-878c9f95&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KVO9AscMyKwQ7kNvwH-gE2_&_nc_oc=Adke--60wZCeYatcST3RMce1sO_oLoNSJ8n5MUOXoi3zFCpxEyz0ZiIHYM9UC9kMROM&_nc_zt=23&_nc_ht=scontent.fsub8-2.fna&_nc_gid=xzRzkIn6jYIVfErSVItKYg&oh=00_AfTnpnqW7oKWwp3dE-hU4M8sUfyjHjCOzq8ZjsYI-OVHSg&oe=6873FA9E" 
+                     alt="FashionStore.id Logo" class="h-10 w-10 rounded-full mr-2">
+                <h1 class="text-xl font-bold">FashionStore.id</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:text-pink-600 transition">Fitur</a>
+                <a href="#gallery" class="hover:text-pink-600 transition">Galeri</a>
+                <a href="#testimonials" class="hover:text-pink-600 transition">Testimoni</a>
+                <a href="#order" class="hover:text-pink-600 transition">Pesan Sekarang</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-2">
+                <a href="#features" class="py-2 hover:text-pink-600 transition">Fitur</a>
+                <a href="#gallery" class="py-2 hover:text-pink-600 transition">Galeri</a>
+                <a href="#testimonials" class="py-2 hover:text-pink-600 transition">Testimoni</a>
+                <a href="#order" class="py-2 hover:text-pink-600 transition">Pesan Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-12 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <h1 class="title-font text-4xl md:text-5xl font-bold mb-4 leading-tight">Pleated A-Line Skirt</h1>
+                <p class="text-lg mb-6">Rok premium dengan desain A-Line yang elegan dan nyaman dipakai seharian. Cocok untuk berbagai kesempatan dari santai hingga formal.</p>
+                
+                <div class="flex items-center mb-6">
+                    <div class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium mr-3">BESTSELLER</div>
+                    <div class="flex items-center text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="text-gray-600 ml-1">4.8 (1,234 reviews)</span>
+                    </div>
+                </div>
+                
+                <div class="flex items-center mb-6">
+                    <span class="text-3xl font-bold text-pink-600">Rp 165.000</span>
+                    <span class="text-xl line-through text-gray-500 ml-3">Rp 247.500</span>
+                    <span class="bg-pink-600 text-white text-sm font-bold px-2 py-1 rounded ml-3">33% OFF</span>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex items-center mb-2">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-pink-600 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <span class="text-sm text-gray-600 ml-2">Tersisa <span id="stock-counter">24</span> dari 100</span>
+                    </div>
+                    <p class="text-sm text-gray-600">Harga promo berlaku hingga <span id="countdown" class="font-bold">23:59:59</span></p>
+                </div>
+                
+                <a href="#order" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full inline-flex items-center transition duration-300 shadow-lg hover:shadow-xl">
+                    BELI SEKARANG <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                
+                <div class="mt-6 flex items-center text-sm text-gray-600">
+                    <i class="fas fa-shield-alt mr-2 text-pink-600"></i>
+                    <span>Garansi 100% Uang Kembali jika tidak puas</span>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 relative">
+                <img src="https://cdn.shopify.com/s/files/1/0717/3813/0665/files/spp_20241125101428_630d2993604340c2a384c5a0f4ed9bef.jpg?v=1732500871" 
+                     alt="Pleated A-Line Skirt" class="rounded-lg product-shadow w-full max-w-md mx-auto">
+                
+                <div class="absolute -bottom-4 -right-4 bg-white p-3 rounded-full shadow-lg">
+                    <div class="bg-pink-600 text-white rounded-full p-3">
+                        <i class="fas fa-tag text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-8 scroll-hint">
+            <a href="#features" class="text-gray-500 hover:text-pink-600">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Problem Solution Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl font-bold mb-4">Solusi Fashion Elegan untuk Wanita Modern</h2>
+                <div class="w-24 h-1 bg-pink-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">Masalah yang Sering Dihadapi:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="bg-pink-100 text-pink-600 rounded-full p-1 mr-3">
+                                    <i class="fas fa-times text-xs"></i>
+                                </div>
+                                <span>Rok yang tidak nyaman dipakai seharian</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-pink-100 text-pink-600 rounded-full p-1 mr-3">
+                                    <i class="fas fa-times text-xs"></i>
+                                </div>
+                                <span>Bahan yang mudah kusut dan sulit dirawat</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-pink-100 text-pink-600 rounded-full p-1 mr-3">
+                                    <i class="fas fa-times text-xs"></i>
+                                </div>
+                                <span>Desain yang tidak fleksibel untuk berbagai kesempatan</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-pink-100 text-pink-600 rounded-full p-1 mr-3">
+                                    <i class="fas fa-times text-xs"></i>
+                                </div>
+                                <span>Ukuran yang tidak pas atau tidak sesuai bentuk tubuh</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-pink-50 p-6 rounded-lg border border-pink-100">
+                        <h3 class="font-bold text-xl mb-3 text-pink-800">Solusi dari Pleated A-Line Skirt:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="bg-pink-600 text-white rounded-full p-1 mr-3">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                                <span>Bahan premium yang nyaman dan tidak mudah kusut</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-pink-600 text-white rounded-full p-1 mr-3">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                                <span>Desain A-Line yang cocok untuk semua bentuk tubuh</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-pink-600 text-white rounded-full p-1 mr-3">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                                <span>Dapat dipadukan dengan berbagai gaya dari casual hingga formal</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-pink-600 text-white rounded-full p-1 mr-3">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                                <span>Pilihan warna eksklusif yang tidak mudah ditemukan di pasaran</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl font-bold mb-4">Keunggulan Produk Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Pleated A-Line Skirt dirancang khusus untuk wanita modern yang mengutamakan kenyamanan tanpa mengorbankan gaya.</p>
+                <div class="w-24 h-1 bg-pink-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-pink-100 text-pink-600 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-tshirt text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Bahan Premium</h3>
+                    <p class="text-gray-600">Terbuat dari bahan rayon berkualitas tinggi yang nyaman, ringan, dan tidak mudah kusut.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-pink-100 text-pink-600 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-ruler-combined text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Desain A-Line</h3>
+                    <p class="text-gray-600">Potongan A-Line yang flattering untuk semua bentuk tubuh, memberikan siluet yang anggun.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-pink-100 text-pink-600 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-layer-group text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Pleated Detail</h3>
+                    <p class="text-gray-600">Detail lipit yang rapi dan presisi, memberikan kesan mewah dan elegan.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-pink-100 text-pink-600 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-palette text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Pilihan Warna Eksklusif</h3>
+                    <p class="text-gray-600">Tersedia dalam warna-warna eksklusif yang sulit ditemukan di produk sejenis.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-pink-100 text-pink-600 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-expand-arrows-alt text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Elastis di Pinggang</h3>
+                    <p class="text-gray-600">Desain pinggang elastis yang nyaman dan dapat menyesuaikan dengan bentuk tubuh.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-pink-100 text-pink-600 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Perawatan Mudah</h3>
+                    <p class="text-gray-600">Bahan yang mudah dirawat, bisa dicuci mesin dengan mode lembut dan cepat kering.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <img src="https://cdn.orderonline.id/uploads/images_1329921752069579198.gif" alt="Fitur Produk" class="mx-auto rounded-lg shadow-md max-w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl font-bold mb-4">Galeri Produk</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Lihat bagaimana Pleated A-Line Skirt dapat meningkatkan gaya fashion Anda.</p>
+                <div class="w-24 h-1 bg-pink-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="cursor-pointer" onclick="openModal('https://cdn.shopify.com/s/files/1/0717/3813/0665/files/spp_20241125101428_630d2993604340c2a384c5a0f4ed9bef.jpg?v=1732500871')">
+                    <img src="https://cdn.shopify.com/s/files/1/0717/3813/0665/files/spp_20241125101428_630d2993604340c2a384c5a0f4ed9bef.jpg?v=1732500871" 
+                         alt="Pleated A-Line Skirt" class="w-full h-64 object-cover rounded-lg hover:opacity-90 transition">
+                </div>
+                
+                <div class="cursor-pointer" onclick="openModal('https://cdn.shopify.com/s/files/1/0717/3813/0665/files/spp_20241125101431_16c11e1406490944a27c7b13a57fc930.jpg?v=1732500874')">
+                    <img src="https://cdn.shopify.com/s/files/1/0717/3813/0665/files/spp_20241125101431_16c11e1406490944a27c7b13a57fc930.jpg?v=1732500874" 
+                         alt="Pleated A-Line Skirt" class="w-full h-64 object-cover rounded-lg hover:opacity-90 transition">
+                </div>
+                
+                <div class="cursor-pointer" onclick="openModal('https://cdn.shopify.com/s/files/1/0717/3813/0665/files/spp_20241125101435_8afac02d2e9d075cd2b63e192d316758.jpg?v=1732500878')">
+                    <img src="https://cdn.shopify.com/s/files/1/0717/3813/0665/files/spp_20241125101435_8afac02d2e9d075cd2b63e192d316758.jpg?v=1732500878" 
+                         alt="Pleated A-Line Skirt" class="w-full h-64 object-cover rounded-lg hover:opacity-90 transition">
+                </div>
+                
+                <div class="cursor-pointer" onclick="openModal('https://tempeie.com/cdn/shop/files/spp_20241125101440_059e662f2d39ef5cc84e95a30da0c938_08d0eaa0-3ba1-4eec-9eac-e3dd69cfe9e8.jpg?v=1732505678&width=493')">
+                    <img src="https://tempeie.com/cdn/shop/files/spp_20241125101440_059e662f2d39ef5cc84e95a30da0c938_08d0eaa0-3ba1-4eec-9eac-e3dd69cfe9e8.jpg?v=1732505678&width=493" 
+                         alt="Pleated A-Line Skirt" class="w-full h-64 object-cover rounded-lg hover:opacity-90 transition">
+                </div>
+                
+                <div class="cursor-pointer" onclick="openModal('https://cdn.shopify.com/s/files/1/0717/3813/0665/files/spp_20241125101424_b666e19b5b3f6902f93e0fac1ce5bdcc.jpg?v=1732500867')">
+                    <img src="https://cdn.shopify.com/s/files/1/0717/3813/0665/files/spp_20241125101424_b666e19b5b3f6902f93e0fac1ce5bdcc.jpg?v=1732500867" 
+                         alt="Pleated A-Line Skirt" class="w-full h-64 object-cover rounded-lg hover:opacity-90 transition">
+                </div>
+                
+                <div class="cursor-pointer" onclick="openModal('https://cdn.orderonline.id/uploads/images_6346031752068638703.gif')">
+                    <img src="https://cdn.orderonline.id/uploads/images_6346031752068638703.gif" 
+                         alt="Pleated A-Line Skirt" class="w-full h-64 object-cover rounded-lg hover:opacity-90 transition">
+                </div>
+            </div>
+            
+            <!-- Image Modal -->
+            <div id="imageModal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4">
+                <div class="modal-content bg-white rounded-lg max-w-4xl w-full relative">
+                    <button onclick="closeModal()" class="absolute -top-4 -right-4 bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:bg-pink-700 transition">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <img id="modalImage" src="" alt="" class="w-full max-h-screen object-contain rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Options -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="title-font text-3xl md:text-4xl font-bold mb-4">Pilihan Warna Eksklusif</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tersedia dalam berbagai warna yang elegan dan timeless.</p>
+                <div class="w-24 h-1 bg-pink-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6 mt-8">
+                <div class="color-option text-center cursor-pointer" onclick="selectColor('black')">
+                    <div class="w-24 h-24 rounded-full bg-gray-900 mb-2 mx-auto border-2 border-transparent active"></div>
+                    <span class="font-medium">Black</span>
+                </div>
+                
+                <div class="color-option text-center cursor-pointer" onclick="selectColor('grey')">
+                    <div class="w-24 h-24 rounded-full bg-gray-500 mb-2 mx-auto border-2 border-transparent"></div>
+                    <span class="font-medium">Grey</span>
+                </div>
+                
+                <div class="color-option text-center cursor-pointer" onclick="selectColor('maroon')">
+                    <div class="w-24 h-24 rounded-full bg-red-900 mb-2 mx-auto border-2 border-transparent"></div>
+                    <span class="font-medium">Maroon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl font-bold mb-4">Apa Kata Pelanggan Kami?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Testimoni asli dari pelanggan yang sudah membeli Pleated A-Line Skirt.</p>
+                <div class="w-24 h-1 bg-pink-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">A</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold">Amanda - Dokter</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sangat nyaman dipakai seharian di rumah sakit. Bahan adem dan tidak mudah kusut meski dipakai bergerak terus."</p>
+                </div>
+                
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">D</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold">Dian - Pengusaha</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Desainnya sangat elegan dan cocok untuk meeting bisnis. Sudah beli 3 warna berbeda karena memang berkualitas."</p>
+                </div>
+                
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">R</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold">Rina - Ibu Rumah Tangga</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Nyaman dipakai untuk aktivitas sehari-hari. Mudah dicuci dan cepat kering, sangat praktis untuk ibu rumah tangga."</p>
+                </div>
+                
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">S</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold">Sarah - Mahasiswa</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Harganya worth it banget untuk kualitasnya. Cocok untuk kuliah maupun hangout dengan teman-teman."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-12 bg-pink-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="title-font text-3xl font-bold mb-4">Pleated A-Line Skirt</h2>
+                        
+                        <div class="flex items-center mb-6">
+                            <span class="text-3xl font-bold text-pink-600">Rp 165.000</span>
+                            <span class="text-xl line-through text-gray-500 ml-3">Rp 247.500</span>
+                            <span class="bg-pink-600 text-white text-sm font-bold px-2 py-1 rounded ml-3">33% OFF</span>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-pink-600 h-2.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                                <span class="text-sm text-gray-600 ml-2">Tersisa <span id="stock-counter-2">24</span> dari 100</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Harga promo berlaku hingga <span id="countdown-2" class="font-bold">23:59:59</span></p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h3 class="font-bold mb-2">Pilihan Warna:</h3>
+                            <div class="flex space-x-4">
+                                <div class="color-option-sm active" onclick="selectColor('black')">
+                                    <div class="w-10 h-10 rounded-full bg-gray-900 border-2 border-pink-600"></div>
+                                    <span class="text-xs mt-1">Black</span>
+                                </div>
+                                <div class="color-option-sm" onclick="selectColor('grey')">
+                                    <div class="w-10 h-10 rounded-full bg-gray-500 border-2 border-transparent"></div>
+                                    <span class="text-xs mt-1">Grey</span>
+                                </div>
+                                <div class="color-option-sm" onclick="selectColor('maroon')">
+                                    <div class="w-10 h-10 rounded-full bg-red-900 border-2 border-transparent"></div>
+                                    <span class="text-xs mt-1">Maroon</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h3 class="font-bold mb-2">Ukuran:</h3>
+                            <div class="grid grid-cols-3 gap-2">
+                                <button class="border border-gray-300 py-2 px-4 rounded hover:bg-pink-100 hover:border-pink-300 transition">S</button>
+                                <button class="border border-gray-300 py-2 px-4 rounded hover:bg-pink-100 hover:border-pink-300 transition">M</button>
+                                <button class="border border-gray-300 py-2 px-4 rounded hover:bg-pink-100 hover:border-pink-300 transition">L</button>
+                                <button class="border border-gray-300 py-2 px-4 rounded hover:bg-pink-100 hover:border-pink-300 transition">XL</button>
+                                <button class="border border-gray-300 py-2 px-4 rounded hover:bg-pink-100 hover:border-pink-300 transition">XXL</button>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-gift text-yellow-500"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-yellow-700">
+                                        <span class="font-bold">KHUSUS HARI INI!</span> Gratis ongkir seluruh Indonesia untuk pembayaran transfer bank.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 bg-gray-50 p-8">
+                        <h3 class="font-bold text-xl mb-4">Form Pemesanan</h3>
+                        
+                        <!-- OrderOnline Embed Form -->
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="elsa" data-product-slug="pleated-a-line-skirt" data-product-id="686e7079f257d2871b02b402" id="oo-embed-form-pleated-a-line-skirt-7919" data-origin="orderonline">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                        
+                        <div class="mt-6 flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-shield-alt text-pink-600 mt-1"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm text-gray-600">
+                                    Pesanan Anda aman dan terjamin. Kami menggunakan sistem pembayaran yang terenkripsi untuk keamanan data Anda.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl font-bold mb-4">Pertanyaan yang Sering Diajukan</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Temukan jawaban atas pertanyaan umum tentang Pleated A-Line Skirt.</p>
+                <div class="w-24 h-1 bg-pink-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="border-b border-gray-200 py-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="font-bold text-lg">Apa bahan dari Pleated A-Line Skirt ini?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-gray-600">Pleated A-Line Skirt kami terbuat dari bahan rayon berkualitas tinggi yang nyaman, ringan, dan memiliki drape yang indah. Bahan ini juga tidak mudah kusut dan mudah dirawat.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 py-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="font-bold text-lg">Bagaimana cara perawatan produk ini?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-gray-600">Kami merekomendasikan untuk mencuci dengan tangan atau menggunakan mesin cuci dengan mode lembut. Gunakan air dingin dan deterjen ringan. Jangan menggunakan pemutih. Keringkan dengan menggantung di tempat teduh dan setrika dengan suhu rendah jika diperlukan.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 py-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="font-bold text-lg">Berapa lama waktu pengiriman?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-gray-600">Waktu pengiriman bervariasi tergantung lokasi Anda. Untuk wilayah Jabodetabek biasanya 1-2 hari kerja, sedangkan luar Jawa membutuhkan waktu 3-5 hari kerja. Kami menggunakan jasa pengiriman terpercaya untuk memastikan produk sampai dengan aman.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 py-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="font-bold text-lg">Apakah tersedia ukuran plus size?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-gray-600">Ya, produk kami tersedia dalam ukuran S hingga XXL dengan pinggang elastis yang dapat menyesuaikan dengan bentuk tubuh. Silakan lihat tabel ukuran di deskripsi produk untuk panduan pemilihan ukuran yang tepat.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 py-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="font-bold text-lg">Bagaimana jika ukuran tidak pas?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content mt-2 hidden">
+                        <p class="text-gray-600">Kami menyediakan layanan tukar ukuran jika produk yang Anda terima tidak sesuai. Silakan hubungi customer service kami dalam waktu 3 hari setelah produk diterima untuk proses penukaran. Biaya pengiriman untuk penukaran akan ditanggung oleh pembeli.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-12 bg-gradient-to-r from-pink-500 to-pink-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="title-font text-3xl md:text-4xl font-bold mb-4">Jangan Lewatkan Kesempatan Ini!</h2>
+            <p class="text-xl mb-6 max-w-2xl mx-auto">Dapatkan Pleated A-Line Skirt dengan harga spesial hari ini saja!</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <div class="bg-white text-pink-600 px-6 py-3 rounded-full font-bold inline-flex items-center">
+                    <span id="countdown-final" class="mr-2">23:59:59</span>
+                    <i class="fas fa-clock"></i>
+                </div>
+                
+                <div class="bg-white text-pink-600 px-6 py-3 rounded-full font-bold inline-flex items-center">
+                    <span id="stock-counter-final" class="mr-2">24</span>
+                    <span>Tersisa</span>
+                </div>
+            </div>
+            
+            <a href="#order" class="mt-8 bg-white hover:bg-gray-100 text-pink-600 font-bold py-4 px-12 rounded-full inline-flex items-center transition duration-300 shadow-lg hover:shadow-xl">
+                BELI SEKARANG <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            
+            <p class="mt-6 text-pink-100">Gratis ongkir khusus hari ini untuk pembayaran transfer bank</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://scontent.fsub8-2.fna.fbcdn.net/v/t39.30808-6/340280384_202238192515306_1857026655624969742_n.jpg?stp=dst-jpg_tt6&cstp=mx626x626&ctp=s626x626&_nc_cat=101&cb=99be929b-878c9f95&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KVO9AscMyKwQ7kNvwH-gE2_&_nc_oc=Adke--60wZCeYatcST3RMce1sO_oLoNSJ8n5MUOXoi3zFCpxEyz0ZiIHYM9UC9kMROM&_nc_zt=23&_nc_ht=scontent.fsub8-2.fna&_nc_gid=xzRzkIn6jYIVfErSVItKYg&oh=00_AfTnpnqW7oKWwp3dE-hU4M8sUfyjHjCOzq8ZjsYI-OVHSg&oe=6873FA9E" 
+                             alt="FashionStore.id Logo" class="h-10 w-10 rounded-full mr-2">
+                        <h3 class="text-xl font-bold">FashionStore.id</h3>
+                    </div>
+                    <p class="text-gray-400">Toko fashion online terpercaya dengan koleksi eksklusif untuk wanita modern.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Beranda</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition">Fitur</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Galeri</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Testimoni</a></li>
+                        <li><a href="#order" class="text-gray-400 hover:text-white transition">Pesan Sekarang</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Kontak Kami</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">Jl. Fashion No. 123, Jakarta</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">cs@fashionstore.id</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    
+                    <h4 class="font-bold text-lg mt-6 mb-2">Metode Pembayaran</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="bg-white p-1 rounded">
+                            <img src="https://cdn.orderonline.id/images/payments/bca.png" alt="BCA" class="h-6">
+                        </div>
+                        <div class="bg-white p-1 rounded">
+                            <img src="https://cdn.orderonline.id/images/payments/mandiri.png" alt="Mandiri" class="h-6">
+                        </div>
+                        <div class="bg-white p-1 rounded">
+                            <img src="https://cdn.orderonline.id/images/payments/bni.png" alt="BNI" class="h-6">
+                        </div>
+                        <div class="bg-white p-1 rounded">
+                            <img src="https://cdn.orderonline.id/images/payments/bri.png" alt="BRI" class="h-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 FashionStore.id. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- New Order Notification -->
+    <div id="newOrderNotification" class="notification fixed bottom-4 right-4 bg-white rounded-lg shadow-xl z-50 max-w-xs w-full p-4 hidden">
+        <div class="flex justify-between items-start mb-2">
+            <div class="flex items-center">
+                <div class="bg-green-100 text-green-800 rounded-full w-8 h-8 flex items-center justify-center font-bold mr-2">
+                    <i class="fas fa-check text-sm"></i>
+                </div>
+                <span class="font-bold">Pesanan Baru!</span>
+            </div>
+            <button id="closeNotification" class="text-gray-400 hover:text-gray-600">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="flex items-center">
+            <div class="bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3" id="customerInitial">R</div>
+            <div>
+                <p class="text-sm"><span id="customerName">Rina</span> dari <span id="customerCity">Bandung</span> baru saja memesan Pleated A-Line Skirt</p>
+                <p class="text-xs text-gray-500 mt-1"><i class="fas fa-clock"></i> <span id="orderTime">1 menit yang lalu</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 0);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            document.getElementById('countdown').textContent = formattedTime;
+            document.getElementById('countdown-2').textContent = formattedTime;
+            document.getElementById('countdown-final').textContent = formattedTime;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Stock counter animation
+        function animateStockCounter() {
+            const target = 24;
+            const element = document.getElementById('stock-counter');
+            const element2 = document.getElementById('stock-counter-2');
+            const element3 = document.getElementById('stock-counter-final');
+            
+            let count = 100;
+            const interval = setInterval(() => {
+                count--;
+                element.textContent = count;
+                element2.textContent = count;
+                element3.textContent = count;
+                
+                if (count <= target) {
+                    clearInterval(interval);
+                }
+            }, 30);
+        }
+        
+        // Run stock animation after page load
+        setTimeout(animateStockCounter, 1500);
+
+        // Image modal
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            
+            modalImage.src = imageSrc;
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Color selection
+        function selectColor(color) {
+            const colorOptions = document.querySelectorAll('.color-option');
+            const colorOptionsSm = document.querySelectorAll('.color-option-sm');
+            
+            colorOptions.forEach(option => {
+                const colorCircle = option.querySelector('div');
+                if (option.getAttribute('onclick').includes(color)) {
+                    colorCircle.classList.add('border-pink-600');
+                    colorCircle.classList.remove('border-transparent');
+                } else {
+                    colorCircle.classList.remove('border-pink-600');
+                    colorCircle.classList.add('border-transparent');
+                }
+            });
+            
+            colorOptionsSm.forEach(option => {
+                const colorCircle = option.querySelector('div');
+                if (option.getAttribute('onclick').includes(color)) {
+                    option.classList.add('active');
+                    colorCircle.classList.add('border-pink-600');
+                    colorCircle.classList.remove('border-transparent');
+                } else {
+                    option.classList.remove('active');
+                    colorCircle.classList.remove('border-pink-600');
+                    colorCircle.classList.add('border-transparent');
+                }
+            });
+        }
+
+        // FAQ toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // New order notification
+        const cities = ['Jakarta', 'Bandung', 'Surabaya', 'Medan', 'Makassar', 'Semarang', 'Yogyakarta', 'Bali'];
+        const names = ['Rina', 'Dewi', 'Sari', 'Putri', 'Lina', 'Maya', 'Dian', 'Nina'];
+        
+        function showNewOrderNotification() {
+            const notification = document.getElementById('newOrderNotification');
+            const customerInitial = document.getElementById('customerInitial');
+            const customerName = document.getElementById('customerName');
+            const customerCity = document.getElementById('customerCity');
+            
+            // Random data
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const randomCity = cities[Math.floor(Math.random() * cities.length)];
+            
+            customerInitial.textContent = randomName.charAt(0);
+            customerName.textContent = randomName;
+            customerCity.textContent = randomCity;
+            
+            notification.classList.remove('hidden');
+            
+            // Auto hide after 5 seconds
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 5000);
+        }
+        
+        // Show first notification after 3 seconds
+        setTimeout(showNewOrderNotification, 3000);
+        
+        // Show random notifications every 20-40 seconds
+        setInterval(() => {
+            showNewOrderNotification();
+        }, 20000 + Math.random() * 20000);
+        
+        // Close notification button
+        document.getElementById('closeNotification').addEventListener('click', function() {
+            document.getElementById('newOrderNotification').classList.add('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Initialize OrderOnline embed script
+        if (typeof xLogError != 'function') {
+            var xLogError = function (error) {
+                var req = new XMLHttpRequest();
+                var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                req.open('POST', 'https://api.orderonline.id/log', true);
+                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                req.send(params);
+            };
+        }
+
+        try {
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        s = d.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function() {
+                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!w._ooe) w._ooe = n;
+                    n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                };
+            }
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://elsa.orderonline.id');
+            ooe('init', '5f1a584d68e4c05c6f66c677', '686e7079f257d2871b02b402', '686e7079f257d2871b02b403', 'oo-embed-form-pleated-a-line-skirt-7919', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+            if (!window.jQuery) {
+                !function(w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        } catch (e) {
+            xLogError(e);
+            throw e;
+        }
+    </script>
+</body>
+</html>
